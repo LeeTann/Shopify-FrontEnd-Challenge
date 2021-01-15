@@ -8,7 +8,7 @@ const SearchBar = ({ searchedMovies }) => {
   }
 
   const getMovies = async (search) => {
-    const url = `http://www.omdbapi.com/?apikey=be593d4&s=${search}&type=movie`
+    const url = `https://www.omdbapi.com/?apikey=be593d4&s=${search}&type=movie`
     const {
       data: { Search },
     } = await axios.get(url)
