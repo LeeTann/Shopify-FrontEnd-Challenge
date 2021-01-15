@@ -1,0 +1,50 @@
+.movies {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  justify-items: center;
+  align-self: center;
+  margin: 10px auto;
+  background-color: pink;
+}
+.movie-card {
+  max-width: 300px;
+  overflow: hidden;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0 0 15px #ddd;
+  margin: 10px;
+  position: relative;
+  background: white;
+}
+
+.movie-title {
+  color: red;
+  font-size: 20px;
+}
+.movie-subrow {
+  display: flex;
+  justify-content: space-between;
+}
+.movie-year {
+  color: green;
+  font-weight: 500;
+}
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .movies {
+    grid-template-columns: 250px 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .movies {
+    grid-template-columns: 250px;
+  }
+}

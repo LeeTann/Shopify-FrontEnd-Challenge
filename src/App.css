@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  padding: 20px 0;
+}
+
+.header h1 {
+  margin-right: 20px;
+}
+
+.main-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-body .movie-result {
+  width: 60%;
+}
+
+@media (max-width: 1000px) {
+  .main-body {
+    flex-direction: column;
+  }
+}

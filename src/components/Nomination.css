@@ -1,0 +1,17 @@
+.nomination-card {
+  max-width: 250px;
+  overflow: hidden;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0 0 15px #ddd;
+  margin: 10px 0;
+  position: relative;
+  background: white;
+}
+
+.nomination-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

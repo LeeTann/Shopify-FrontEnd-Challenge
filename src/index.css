@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.App {
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 50px;
+  box-shadow: 0 0 35px #eee;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+/* button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #f06cb4;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+button:hover {
+  background-color: #8b3f69;
+} */
+
+/* ------------App ------------ */
+@import url('./App.css');
+
+/* ------------Movie Card ------------ */
+@import url('./components/MovieCard.css');
+
+/* ------------Nominations ------------ */
+@import url('./components//Nomination.css');
+
+/* ------------SearchBar ------------ */
+@import url('./components/SearchBar.css');
