@@ -9,14 +9,15 @@ const App = () => {
   const [nominations, setNominations] = useState([])
 
   useEffect(() => {
-    if (localStorage.getItem('noms')) {
-      setNominations(getLocalStorage('noms'))
+    const data = localStorage.getItem('noms')
+    if (data) {
+      setNominations(JSON.parse(data))
     }
   }, [])
 
-  const getLocalStorage = (key) => {
-    return JSON.parse(localStorage.getItem(key))
-  }
+  useEffect(() => {
+    setLocalStorage('noms', nominations)
+  }, [nominations])
 
   const setLocalStorage = (key, val) => {
     localStorage.setItem(key, JSON.stringify(val))
@@ -38,13 +39,11 @@ const App = () => {
           movies={movies}
           nominations={nominations}
           setNominations={setNominations}
-          setLocalStorage={setLocalStorage}
         />
         <Nomination
           classname='noms'
           nominations={nominations}
           setNominations={setNominations}
-          setLocalStorage={setLocalStorage}
         />
       </div>
     </div>

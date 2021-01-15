@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Nomination = ({ nominations, setNominations, setLocalStorage }) => {
+const Nomination = ({ nominations, setNominations }) => {
   const deleteNomination = (id) => {
     setNominations(nominations.filter((nom) => nom.imdbID !== id))
-    setLocalStorage('noms', [...nominations])
   }
   console.log(nominations)
   return (

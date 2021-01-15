@@ -1,15 +1,9 @@
 import React from 'react'
 
-const MovieCard = ({
-  movies,
-  nominations,
-  setNominations,
-  setLocalStorage,
-}) => {
+const MovieCard = ({ movies, nominations, setNominations }) => {
   const addNomination = (movie) => {
     if (nominations.length < 5) {
       setNominations([...nominations, movie])
-      setLocalStorage('noms', [...nominations, movie])
     } else {
       alert('You have reached a max of 5 nominated movies.')
     }
